@@ -1,209 +1,134 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>8TRAX FX — Telegram Marketplace</title>
-  <meta name="description" content="8TraxFX — Telegram-native marketplace for verified Forex tools, EAs, and indicators." />
+<title>8TRAX FX — Telegram Marketplace</title>
+<meta name="description" content="8TraxFX — Telegram marketplace for verified Forex tools. Buyers browse @EightTraxMarket, sellers submit via @EightTraxFXBot, support in @EightTrax_Main." />
 
-  <!-- Social preview -->
-  <meta property="og:title" content="8TRAX FX — Telegram Marketplace" />
-  <meta property="og:description" content="Buy & sell verified Forex tools, EAs, and indicators — directly on Telegram." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/img/logo-8traxfx.png" />
+<meta property="og:title" content="8TRAX FX — Telegram Marketplace" />
+<meta property="og:description" content="Buy & sell verified Forex tools on Telegram." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/assets/img/logo-8traxfx.png" />
 
-  <link rel="icon" href="/assets/img/logo-8traxfx.png" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="icon" href="/assets/img/logo-8traxfx.png" />
+<link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
 <body>
-  <div class="bg bg--fx">
-    <div class="bg__grid"></div>
-    <div class="bg__glow"></div>
-    <div class="bg__noise"></div>
+
+<div class="bg bg--fx">
+  <div class="bg__grid"></div>
+  <div class="bg__glow"></div>
+  <div class="bg__noise"></div>
+</div>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="/">
+      <img class="brand__logo" src="/assets/img/logo-8traxfx.png" alt="8TRAX FX" />
+      <span class="brand__text">8TRAX <span class="accent">FX</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a class="nav__link" href="https://t.me/EightTraxMarket" target="_blank">Market</a>
+      <a class="nav__link" href="https://t.me/EightTrax_Main/1" target="_blank">Discussion</a>
+      <a class="nav__link" href="/8traxfx/docs/">Docs</a>
+      <a class="nav__link" href="#sellers">For Sellers</a>
+      <a class="btn btn--primary" href="https://t.me/EightTraxMarket" target="_blank">Open Market</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero hero--fx">
+  <div class="hero__left">
+    <div class="pill">
+      <span class="dot dot--green"></span>
+      <span>LIVE • Telegram Marketplace</span>
+    </div>
+
+    <h1 class="h1">Structured Forex Tool Marketplace</h1>
+
+    <p class="lead">
+      8TraxFX connects buyers and sellers of Forex tools through a public Telegram marketplace feed,
+      structured seller pages, and a dedicated discussion room.
+    </p>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="https://t.me/EightTraxMarket" target="_blank">Browse Listings</a>
+      <a class="btn btn--ghost" href="/8traxfx/docs/">How It Works</a>
+    </div>
+
+    <p class="tiny muted">
+      Buyers browse @EightTraxMarket.  
+      Sellers use @EightTraxFXBot.  
+      Support via EightTrax_Main discussion room.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <h2 class="h2">Marketplace Structure</h2>
   </div>
 
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="/">
-        <img class="brand__logo" src="/assets/img/logo-8traxfx.png" alt="8TRAX FX" />
-        <span class="brand__text">8TRAX <span class="accent">FX</span></span>
-      </a>
+  <div class="cards">
 
-      <nav class="nav" id="nav">
-        <a class="nav__link" href="#features">Features</a>
-        <a class="nav__link" href="#sellers">For Sellers</a>
-        <a class="nav__link" href="#trust">Trust</a>
-        <a class="btn btn--primary" href="https://t.me/EightTraxFXBot" target="_blank"rel="noopener noreferrer">Open Marketplace Bot</a>
-      </nav>
+    <article class="card card--glow">
+      <h3 class="h3">Market Channel</h3>
+      <p class="card__desc">
+        Public feed where listings are published and buyers discover tools.
+      </p>
+      <a class="btn btn--primary" href="https://t.me/EightTraxMarket" target="_blank">Open Market</a>
+    </article>
 
-      <button class="navbtn" id="navbtn" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <article class="card">
+      <h3 class="h3">Discussion Room</h3>
+      <p class="card__desc">
+        Community questions, support, clarifications and marketplace discussions.
+      </p>
+      <a class="btn btn--ghost" href="https://t.me/EightTrax_Main/1" target="_blank">Open Discussion</a>
+    </article>
+
+    <article class="card">
+      <h3 class="h3">Seller Bot</h3>
+      <p class="card__desc">
+        Used by sellers and admins to submit and manage listings.
+      </p>
+      <a class="btn btn--ghost" href="https://t.me/EightTraxFXBot" target="_blank">Open Seller Bot</a>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="sellers">
+  <div class="ctaBlock">
+    <div>
+      <h2 class="h2">For Developers & Tool Creators</h2>
+      <p class="muted">
+        List your EA, Indicator, or Setfile. Get structured exposure and build your seller profile.
+      </p>
     </div>
-  </header>
+    <div class="ctaBlock__actions">
+      <a class="btn btn--primary" href="https://t.me/EightTraxFXBot" target="_blank">Apply as Seller</a>
+      <a class="btn btn--ghost" href="/8traxfx/docs/">Read Seller Guide</a>
+    </div>
+  </div>
+</section>
 
-  <main class="container">
-    <section class="hero hero--fx">
-      <div class="hero__left">
-        <div class="pill">
-          <span class="dot dot--green"></span>
-          <span>LIVE • Telegram Marketplace</span>
-        </div>
+<footer class="footer">
+  <div class="footer__left">
+    <img class="footer__logo" src="/assets/img/logo-8traxfx.png" />
+    <div>
+      <div class="footer__brand">8TRAX FX</div>
+      <div class="footer__muted">Telegram Marketplace • LIVE</div>
+    </div>
+  </div>
+</footer>
 
-        <h1 class="h1">Buy & Sell Verified FX Tools</h1>
-        <p class="lead">
-          8TraxFX is the premium Telegram-native marketplace for Forex tools, EAs, indicators and systems —
-          built for speed, trust, and clean listings.
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="https://t.me/EightTraxFXBot" target="_blank"rel="noopener noreferrer">Open Marketplace Bot</a>
-          <a class="btn btn--ghost" href="#sellers">Become a Seller</a>
-        </div>
-
-        <div class="miniStats" id="trust">
-          <div class="miniStat">
-            <div class="miniStat__k">Listings</div>
-            <div class="miniStat__v">—</div>
-          </div>
-          <div class="miniStat">
-            <div class="miniStat__k">Verified Sellers</div>
-            <div class="miniStat__v">—</div>
-          </div>
-          <div class="miniStat">
-            <div class="miniStat__k">Users</div>
-            <div class="miniStat__v">—</div>
-          </div>
-        </div>
-
-        <p class="tiny muted">
-          We can connect these stats to your live marketplace later (or update manually for now).
-        </p>
-      </div>
-
-      <div class="hero__right">
-        <div class="panel">
-          <div class="panel__top">
-            <span class="badge badge--live">LIVE</span>
-            <span class="panel__title">Featured Categories</span>
-          </div>
-
-          <div class="toolGrid">
-            <div class="toolCard">
-              <div class="toolCard__icon">EA</div>
-              <div class="toolCard__meta">
-                <div class="toolCard__name">Expert Advisors</div>
-                <div class="toolCard__sub muted">Automation</div>
-              </div>
-            </div>
-
-            <div class="toolCard">
-              <div class="toolCard__icon">IND</div>
-              <div class="toolCard__meta">
-                <div class="toolCard__name">Indicators</div>
-                <div class="toolCard__sub muted">Signals</div>
-              </div>
-            </div>
-
-            <div class="toolCard">
-              <div class="toolCard__icon">SET</div>
-              <div class="toolCard__meta">
-                <div class="toolCard__name">Setfiles</div>
-                <div class="toolCard__sub muted">Presets</div>
-              </div>
-            </div>
-
-            <div class="toolCard">
-              <div class="toolCard__icon">PRO</div>
-              <div class="toolCard__meta">
-                <div class="toolCard__name">Verified Sellers</div>
-                <div class="toolCard__sub muted">Trust</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel__cta">
-            <button class="btn btn--primary" data-toast="We can build /8traxfx/listings next">Browse Listings</button>
-            <button class="btn btn--ghost" data-toast="We can build /8traxfx/sell next">Sell a Tool</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="section__head">
-        <h2 class="h2">Marketplace Features</h2>
-        <p class="muted">Clean listings, premium UX, Telegram-first workflows.</p>
-      </div>
-
-      <div class="featureGrid">
-        <div class="feature">
-          <div class="feature__icon">✓</div>
-          <div class="feature__title">Verified Sellers</div>
-          <div class="feature__text muted">Trust-first marketplace positioning.</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">⚡</div>
-          <div class="feature__title">Fast Onboarding</div>
-          <div class="feature__text muted">Enter through Telegram in seconds.</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">☰</div>
-          <div class="feature__title">Structured Listings</div>
-          <div class="feature__text muted">Premium tool cards that sell clearly.</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">🛡</div>
-          <div class="feature__title">Secure Flow</div>
-          <div class="feature__text muted">Designed for escrow-like marketplace UX.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sellers">
-      <div class="ctaBlock">
-        <div>
-          <h2 class="h2">For Developers & EA Creators</h2>
-          <p class="muted">
-            List your tools. Reach a global Telegram audience. Build reputation and grow sales with clean, premium listings.
-          </p>
-          <ul class="list">
-            <li>Seller profile + verification badge</li>
-            <li>Tool thumbnails + categories</li>
-            <li>Fast approvals + quality control</li>
-          </ul>
-        </div>
-
-        <div class="ctaBlock__actions">
-          <button class="btn btn--primary" data-toast="Add seller form link next (Tally/Google/custom)">Apply as Seller</button>
-          <a class="btn btn--ghost" href="/">Back to Global Hub</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer__left">
-        <img class="footer__logo" src="/assets/img/logo-8traxfx.png" alt="8TRAX FX" />
-        <div>
-          <div class="footer__brand">8TRAX <span class="accent">FX</span></div>
-          <div class="footer__muted">Telegram Marketplace • LIVE</div>
-        </div>
-      </div>
-
-      <div class="footer__right">
-        <a class="footer__link" href="/">Global Hub</a>
-        <a class="footer__link" href="#features">Features</a>
-        <a class="footer__link" href="#sellers">Sellers</a>
-      </div>
-    </footer>
-  </main>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="/assets/js/main.js"></script>
+</main>
 </body>
 </html>
