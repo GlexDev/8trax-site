@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>8TRAX Arena — Onchain Volatility Arena</title>
+  <meta name="description" content="8TraxArena — Onchain volatility and argument arena built on Base. Fast rounds. Social rooms. Clean settlement." />
+
+  <link rel="icon" href="/assets/img/logo-8trax.png" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="bg__grid"></div>
+    <div class="bg__glow"></div>
+    <div class="bg__mark" aria-hidden="true"></div>
+    <div class="bg__mask" aria-hidden="true"></div>
+    <div class="bg__noise"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__logo" src="/assets/img/logo-8trax.png" alt="8TRAX" />
+        <span class="brand__text">8TRAX</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="/">Hub</a>
+        <a class="nav__link" href="/8traxfx/">8TraxFX</a>
+        <a class="nav__link is-disabled" href="#" aria-disabled="true">Docs</a>
+        <a class="btn btn--ghost is-disabled" href="#" aria-disabled="true">
+          Global Bot (Coming Soon)
+        </a>
+      </nav>
+
+      <button class="navbtn" id="navbtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero__left">
+        <div class="pill">
+          <span class="dot dot--orange"></span>
+          <span>Coming Soon • Built on Base</span>
+        </div>
+
+        <h1 class="h1">8TraxArena</h1>
+        <p class="lead">
+          An onchain volatility and argument arena.
+          Fast rounds. Social battles. Transparent settlement.
+          Built for competitive market energy.
+        </p>
+
+        <div class="hero__cta">
+          <button class="btn btn--primary" data-toast="Launch expected soon">
+            Join Early Access
+          </button>
+          <a class="btn btn--ghost" href="/">
+            Back to Hub
+          </a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="meta">
+            <span class="meta__k">Network</span>
+            <span class="meta__v">Base</span>
+          </div>
+          <div class="meta">
+            <span class="meta__k">Mode</span>
+            <span class="meta__v">Testnet → Mainnet</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="panel">
+          <div class="panel__top">
+            <span class="badge badge--soon">COMING SOON</span>
+            <span class="panel__title">Core Features</span>
+          </div>
+
+          <div class="featureGrid">
+
+            <div class="feature">
+              <div class="feature__icon">⚡</div>
+              <div class="feature__title">Short Rounds</div>
+              <div class="feature__text muted">
+                15-minute volatility battles.
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon">👥</div>
+              <div class="feature__title">Social Rooms</div>
+              <div class="feature__text muted">
+                Public matchups and community-driven battles.
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon">⛓</div>
+              <div class="feature__title">Onchain Settlement</div>
+              <div class="feature__text muted">
+                Transparent smart contract execution.
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon">🏆</div>
+              <div class="feature__title">Leaderboards</div>
+              <div class="feature__text muted">
+                Performance-based rankings.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
