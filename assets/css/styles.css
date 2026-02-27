@@ -550,3 +550,87 @@ img{max-width:100%;display:block}
   .nav__link, .btn{width:100%}
   .miniStats{grid-template-columns:1fr; }
 }
+
+/* =========================
+   Elite Icon Watermark Layer
+   (rotate + gradient mask + subtle glow)
+========================= */
+
+.bg__mark{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+
+  /* icon-only watermark */
+  background-image: url("/assets/img/logo-8trax.png");
+  background-repeat:no-repeat;
+  background-size: 760px 760px;
+  background-position: 72% 38%;
+
+  /* faint + premium */
+  opacity: 0.05;
+
+  /* rotate the watermark */
+  transform: rotate(-10deg);
+  transform-origin: 72% 38%;
+
+  /* subtle glow + clarity */
+  filter:
+    blur(0.6px)
+    drop-shadow(0 0 46px rgba(255,106,0,.35))
+    drop-shadow(0 0 120px rgba(255,106,0,.18));
+
+  animation: markBreathe 6.5s ease-in-out infinite;
+}
+
+/* Gradient mask overlay to fade parts of the mark */
+.bg__mask{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+
+  /* This fades the watermark so it's not "flat" */
+  background:
+    radial-gradient(520px 420px at 70% 36%, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 55%, rgba(0,0,0,.55) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.20) 35%, rgba(0,0,0,.70));
+}
+
+/* Slow breathing glow animation */
+@keyframes markBreathe{
+  0%, 100%{
+    opacity: 0.045;
+    filter:
+      blur(0.6px)
+      drop-shadow(0 0 40px rgba(255,106,0,.28))
+      drop-shadow(0 0 100px rgba(255,106,0,.16));
+  }
+  50%{
+    opacity: 0.06;
+    filter:
+      blur(0.6px)
+      drop-shadow(0 0 58px rgba(255,106,0,.40))
+      drop-shadow(0 0 150px rgba(255,106,0,.20));
+  }
+}
+
+/* Responsive tuning */
+@media (max-width: 900px){
+  .bg__mark{
+    background-size: 560px 560px;
+    background-position: 70% 34%;
+    transform-origin: 70% 34%;
+    opacity: 0.045;
+  }
+}
+
+@media (max-width: 600px){
+  .bg__mark{
+    background-size: 420px 420px;
+    background-position: 62% 28%;
+    transform-origin: 62% 28%;
+    opacity: 0.04;
+  }
+}
+

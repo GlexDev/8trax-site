@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>8TRAX — Global Hub</title>
-  <meta name="description" content="8TRAX Global Hub — Telegram-first marketplaces and onchain arenas unified in one ecosystem." />
+  <title>8TRAX — Telegram Utility Hub</title>
+  <meta name="description" content="8TRAX is the mother hub for premium Telegram-first utility bots — live modules and upcoming projects in one place." />
 
-  <!-- Social preview -->
-  <meta property="og:title" content="8TRAX — Global Hub" />
-  <meta property="og:description" content="Telegram-first marketplaces and onchain arenas unified in one ecosystem." />
+  <meta property="og:title" content="8TRAX — Telegram Utility Hub" />
+  <meta property="og:description" content="Premium Telegram-first utility bots — live modules and upcoming projects in one place." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/img/logo-8trax.png" />
 
@@ -20,10 +19,15 @@
 <body>
   <!-- Ambient background -->
   <div class="bg">
-    <div class="bg__grid"></div>
-    <div class="bg__glow"></div>
-    <div class="bg__noise"></div>
-  </div>
+  <div class="bg__grid"></div>
+  <div class="bg__glow"></div>
+
+  <!-- Elite watermark (icon-only) -->
+  <div class="bg__mark" aria-hidden="true"></div>
+  <div class="bg__mask" aria-hidden="true"></div>
+
+  <div class="bg__noise"></div>
+</div>
 
   <!-- Top bar -->
   <header class="topbar">
@@ -34,11 +38,13 @@
       </a>
 
       <nav class="nav" id="nav">
-        <a class="nav__link" href="#ecosystem">Ecosystem</a>
+        <a class="nav__link" href="#projects">Projects</a>
         <a class="nav__link" href="/8traxfx/">8TraxFX</a>
         <a class="nav__link is-disabled" href="#" aria-disabled="true">Arena</a>
         <a class="nav__link is-disabled" href="#" aria-disabled="true">Docs</a>
-        <a class="btn btn--ghost" href="https://t.me/EightTraxFXBot" target="_blank">Open Telegram</a>
+        <a class="btn btn--ghost is-disabled" href="#" aria-disabled="true" data-toast="8Trax Global Hub Bot coming soon">
+          Open Telegram
+        </a>
       </nav>
 
       <button class="navbtn" id="navbtn" aria-label="Open menu" aria-expanded="false">
@@ -53,33 +59,35 @@
       <div class="hero__left">
         <div class="pill">
           <span class="dot dot--orange"></span>
-          <span>Premium • Futuristic • Telegram-first</span>
+          <span>Mother Hub • Telegram-first • Premium Utilities</span>
         </div>
 
-        <h1 class="h1">The 8Trax Global Trading Hub</h1>
+        <h1 class="h1">The 8Trax Telegram Utility Hub</h1>
         <p class="lead">
-          Telegram-native marketplaces and onchain volatility arenas — unified under one ecosystem.
-          Built for traders, builders, and volatility hunters worldwide.
+          One home for all 8Trax Telegram bots — live tools, marketplaces, and upcoming utility modules.
+          Built to scale into a full ecosystem.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="/8traxfx/">Enter 8TraxFX</a>
-          <a class="btn btn--ghost" href="#ecosystem">Explore Ecosystem</a>
+          <a class="btn btn--primary" href="#projects">Explore Projects</a>
+          <a class="btn btn--ghost" href="https://t.me/EightTraxFXBot" target="_blank" rel="noopener noreferrer">
+            Open 8TraxFX Bot
+          </a>
         </div>
 
         <div class="hero__meta">
           <div class="meta">
-            <span class="meta__k">Live</span>
-            <span class="meta__v"><span class="badge badge--live">LIVE</span> 8TraxFX Marketplace</span>
+            <span class="meta__k">Live Bots</span>
+            <span class="meta__v"><span class="badge badge--live">LIVE</span> 8TraxFX</span>
           </div>
           <div class="meta">
-            <span class="meta__k">Next</span>
-            <span class="meta__v"><span class="badge badge--soon">COMING SOON</span> 8TraxArena (Base)</span>
+            <span class="meta__k">Next Drop</span>
+            <span class="meta__v"><span class="badge badge--soon">COMING SOON</span> 8TraxArena</span>
           </div>
         </div>
       </div>
 
-      <!-- Right: mock-like glow cards -->
+      <!-- Right: featured cards (same vibe as mock) -->
       <div class="hero__right">
         <div class="orb">
           <div class="orb__ring"></div>
@@ -87,12 +95,14 @@
           <div class="orb__card">
             <div class="orb__head">
               <span class="badge badge--live">LIVE</span>
-              <span class="orb__title">8TraxFX Marketplace</span>
+              <span class="orb__title">8TraxFX Marketplace Bot</span>
             </div>
-            <p class="orb__text">Buy & sell verified Forex tools, EAs, indicators — directly on Telegram.</p>
+            <p class="orb__text">Telegram marketplace for verified FX tools, EAs, indicators.</p>
             <div class="orb__actions">
-              <a class="btn btn--primary btn--sm" href="https://t.me/EightTraxFXBot" target="_blank">Open 8TraxFX</a>
-              <button class="btn btn--ghost btn--sm" data-toast="Seller application page can be added next">Become a Seller</button>
+              <a class="btn btn--primary btn--sm" href="https://t.me/EightTraxFXBot" target="_blank" rel="noopener noreferrer">
+                Open Bot
+              </a>
+              <a class="btn btn--ghost btn--sm" href="/8traxfx/">View Page</a>
             </div>
           </div>
 
@@ -101,10 +111,10 @@
               <span class="badge badge--soon">COMING SOON</span>
               <span class="orb__title">8TraxArena</span>
             </div>
-            <p class="orb__text">Onchain volatility battles and social rooms — fast rounds, clean UX.</p>
+            <p class="orb__text">Onchain volatility/argument arena on Base — battles, rooms, settlement.</p>
             <div class="orb__actions">
-              <button class="btn btn--ghost btn--sm" data-toast="We’ll add /arena when ready">Notify Me</button>
-              <button class="btn btn--ghost btn--sm" data-toast="Arena teaser page comes next">Preview</button>
+              <button class="btn btn--ghost btn--sm" data-toast="Arena page will be added next: /arena">Preview</button>
+              <button class="btn btn--ghost btn--sm" data-toast="Notify system can be added (Telegram or email)">Notify Me</button>
             </div>
           </div>
 
@@ -112,57 +122,97 @@
       </div>
     </section>
 
-    <!-- ECOSYSTEM -->
-    <section class="section" id="ecosystem">
+    <!-- PROJECTS GRID -->
+    <section class="section" id="projects">
       <div class="section__head">
-        <h2 class="h2">Inside the 8Trax Ecosystem</h2>
-        <p class="muted">One brand. Multiple engines. Same premium experience.</p>
+        <h2 class="h2">Projects</h2>
+        <p class="muted">
+          Live bots and upcoming modules — everything under the 8Trax ecosystem.
+        </p>
       </div>
 
       <div class="cards">
+        <!-- Card 1: 8TraxFX -->
         <article class="card card--glow">
           <div class="card__top">
             <span class="badge badge--live">LIVE</span>
             <span class="card__tag">Telegram Marketplace</span>
           </div>
-
           <h3 class="h3">8TraxFX Marketplace</h3>
           <p class="card__desc">
-            A Telegram-native marketplace for verified EAs, indicators, and FX tools — designed for speed and trust.
+            Telegram-native marketplace for buying and selling verified Forex tools — EAs, indicators, setfiles and more.
           </p>
-
           <ul class="list">
-            <li>Verified sellers & listings</li>
-            <li>Clean tool cards + profiles</li>
-            <li>Telegram-first onboarding</li>
+            <li>Verified sellers & structured listings</li>
+            <li>Fast Telegram onboarding</li>
+            <li>Premium marketplace UX</li>
           </ul>
-
           <div class="card__cta">
-            <a class="btn btn--primary" href="/8traxfx/">Launch 8TraxFX</a>
-            <button class="btn btn--ghost" data-toast="We can add /8traxfx/sell next">Sell a Tool</button>
+            <a class="btn btn--primary" href="https://t.me/EightTraxFXBot" target="_blank" rel="noopener noreferrer">Open Bot</a>
+            <a class="btn btn--ghost" href="/8traxfx/">Landing Page</a>
           </div>
         </article>
 
+        <!-- Card 2: 8TraxArena -->
         <article class="card">
           <div class="card__top">
             <span class="badge badge--soon">COMING SOON</span>
-            <span class="card__tag">Onchain Arena</span>
+            <span class="card__tag">Base Onchain Arena</span>
           </div>
-
           <h3 class="h3">8TraxArena</h3>
           <p class="card__desc">
-            Base-powered volatility battles, social matchups, and fast settlement — built for competitive market energy.
+            Onchain volatility & argument arena — short rounds, social rooms, non-custodial settlement.
           </p>
-
           <ul class="list">
-            <li>15-minute rounds + social rooms</li>
-            <li>Non-custodial vault model</li>
-            <li>Oracle-grade settlement (mainnet)</li>
+            <li>Social battles + live rooms</li>
+            <li>Base network settlement</li>
+            <li>Public stats + leaderboards</li>
           </ul>
-
           <div class="card__cta">
-            <button class="btn btn--ghost" data-toast="We’ll add /arena soon">Notify Me</button>
-            <button class="btn btn--ghost" data-toast="Teaser section is ready">Read More</button>
+            <button class="btn btn--ghost" data-toast="We’ll add /arena as a teaser page next">Preview</button>
+            <button class="btn btn--ghost" data-toast="Add Notify via Telegram soon">Notify Me</button>
+          </div>
+        </article>
+
+        <!-- Card 3: Placeholder for future bots -->
+        <article class="card">
+          <div class="card__top">
+            <span class="badge badge--soon">COMING SOON</span>
+            <span class="card__tag">New Utility Module</span>
+          </div>
+          <h3 class="h3">Next 8Trax Bot</h3>
+          <p class="card__desc">
+            New Telegram utility module in development. This hub will list every official 8Trax bot as it launches.
+          </p>
+          <ul class="list">
+            <li>Utilities • tools • automations</li>
+            <li>Telegram-native UX</li>
+            <li>Premium dark + neon UI</li>
+          </ul>
+          <div class="card__cta">
+            <button class="btn btn--ghost" data-toast="We can add a roadmap page next">View Roadmap</button>
+            <button class="btn btn--ghost" data-toast="We can add a subscribe/notify box next">Get Updates</button>
+          </div>
+        </article>
+
+        <!-- Card 4: Placeholder -->
+        <article class="card">
+          <div class="card__top">
+            <span class="badge badge--soon">COMING SOON</span>
+            <span class="card__tag">New Utility Module</span>
+          </div>
+          <h3 class="h3">Future Module</h3>
+          <p class="card__desc">
+            Reserve slot for future releases — analytics bots, trackers, dashboards, and more.
+          </p>
+          <ul class="list">
+            <li>Expandable ecosystem structure</li>
+            <li>Cards scale cleanly forever</li>
+            <li>Consistent brand UI</li>
+          </ul>
+          <div class="card__cta">
+            <button class="btn btn--ghost" data-toast="Add soon">Coming Soon</button>
+            <button class="btn btn--ghost" data-toast="Add soon">Coming Soon</button>
           </div>
         </article>
       </div>
@@ -171,37 +221,37 @@
     <!-- HOW IT WORKS -->
     <section class="section">
       <div class="section__head">
-        <h2 class="h2">Telegram First. Global Reach.</h2>
-        <p class="muted">Fast onboarding, clean UX, premium design.</p>
+        <h2 class="h2">How 8Trax Works</h2>
+        <p class="muted">Simple: the hub lists everything — users enter through Telegram.</p>
       </div>
 
       <div class="steps">
         <div class="step">
           <div class="step__num">1</div>
           <div class="step__body">
-            <div class="step__title">Join</div>
-            <div class="step__text">Enter through Telegram for instant access.</div>
+            <div class="step__title">Discover</div>
+            <div class="step__text">Browse official 8Trax bots and modules here.</div>
           </div>
         </div>
         <div class="step">
           <div class="step__num">2</div>
           <div class="step__body">
-            <div class="step__title">Choose</div>
-            <div class="step__text">Marketplace tools or arena battles.</div>
+            <div class="step__title">Launch</div>
+            <div class="step__text">Open the bot instantly via Telegram deep-link.</div>
           </div>
         </div>
         <div class="step">
           <div class="step__num">3</div>
           <div class="step__body">
-            <div class="step__title">Execute</div>
-            <div class="step__text">Trade, list tools, or compete.</div>
+            <div class="step__title">Use</div>
+            <div class="step__text">Utilities, tools, marketplaces and more — all Telegram-first.</div>
           </div>
         </div>
         <div class="step">
           <div class="step__num">4</div>
           <div class="step__body">
             <div class="step__title">Scale</div>
-            <div class="step__text">Build reputation and repeat.</div>
+            <div class="step__text">New modules drop and appear here as the ecosystem grows.</div>
           </div>
         </div>
       </div>
@@ -211,15 +261,15 @@
     <section class="section section--cta">
       <div class="ctaBlock">
         <div>
-          <h2 class="h2">Built Beyond Bots</h2>
+          <h2 class="h2">A Mother Hub for Many Bots</h2>
           <p class="muted">
-            8Trax is evolving into a global volatility infrastructure layer — connecting Telegram, onchain markets,
-            and future utility systems under one unified engine.
+            8Trax is built as a scalable Telegram utilities ecosystem — each bot is a module,
+            all listed here with a consistent premium experience.
           </p>
         </div>
         <div class="ctaBlock__actions">
-          <a class="btn btn--primary" href="https://t.me/EightTraxFXBot" target="_blank">Enter 8TraxFX</a>
-          <button class="btn btn--ghost" data-toast="Telegram deep-link can be added next">Open Telegram</button>
+          <a class="btn btn--primary" href="#projects">Explore Projects</a>
+          <a class="btn btn--ghost" href="https://t.me/EightTraxFXBot" target="_blank" rel="noopener noreferrer">Open 8TraxFX</a>
         </div>
       </div>
     </section>
@@ -230,13 +280,13 @@
         <img class="footer__logo" src="/assets/img/logo-8trax.png" alt="8TRAX" />
         <div>
           <div class="footer__brand">8TRAX</div>
-          <div class="footer__muted">Global Hub • Premium Telegram-first ecosystem</div>
+          <div class="footer__muted">Telegram Utility Hub • Ecosystem Directory</div>
         </div>
       </div>
       <div class="footer__right">
         <a class="footer__link" href="/8traxfx/">8TraxFX</a>
         <a class="footer__link is-disabled" href="#" aria-disabled="true">Arena</a>
-        <a class="footer__link is-disabled" href="#" aria-disabled="true">Docs</a>
+        <a class="footer__link" href="#projects">Projects</a>
       </div>
     </footer>
   </main>
